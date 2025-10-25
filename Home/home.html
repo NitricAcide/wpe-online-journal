@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+    <link rel="stylesheet" href="../global.css">
+    <link rel="stylesheet" href="home.css">
+    <base href="../"> 
+    <title>WPE Online Journal</title>
+</head>
+<body>
+    <div class="background"></div>
+    <div id="navbar"></div>
+    <div class="home">
+        <div class="title-line-spacing">
+            <h2>WPE</h2>
+            <h1>Online Journal</h1>
+        </div>
+        <p>Explore my journey as I experience the journey throught the<br>
+            different venues that represent Silliman's holistic education</p>
+    </div>
+</body>
+<script>
+    fetch('../navbar.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('navbar').innerHTML = data;
+        });
+</script>
+</html>
+
