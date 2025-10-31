@@ -57,7 +57,6 @@ body {
     margin: 0px;
 }
 .journal-entry .reflection {
-    font-size: 1.5em;
     margin-top: 1em;
     display: flex;
     flex-direction: row;
@@ -65,7 +64,8 @@ body {
 }
 .journal-entry .reflection p {
     font-family: 'Open Sans';
-    font-size: 15px;
+    text-align: center;
+    font-size: 12px;
 }
 .carousel-container {
     position: relative;
